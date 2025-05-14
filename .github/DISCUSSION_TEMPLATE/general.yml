@@ -1,0 +1,24 @@
+title: "General Discussion"
+body:
+  - type: checkboxes
+    attributes:
+      label: Self Checks
+      description: "To make sure we get to you in time, please check the following :)"
+      options:
+        - label: I have searched for existing issues [search for existing issues](https://github.com/khulnasoft/aiexec/issues), including closed ones.
+          required: true
+        - label: I confirm that I am using English to submit this report (আমি ইংরেজিতে এই রিপোর্ট সাবমিট করছি).
+          required: true
+        - label: "[FOR BENGALI USERS] দয়া করে ইংরেজিতে ইস্যু সাবমিট করুন, অন্যথায় এটি বন্ধ হবে। ধন্যবাদ!"
+          required: true
+        - label: "Please do not modify this template :) and fill in all the required fields."
+          required: true
+  - type: textarea
+    attributes:
+      label: Content
+      placeholder: Please describe the content you would like to discuss.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Please limit one request per issue.

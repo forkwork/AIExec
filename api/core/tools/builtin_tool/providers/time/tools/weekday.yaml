@@ -1,0 +1,50 @@
+identity:
+  name: weekday
+  author: Bowen Liang
+  label:
+    en_US: Weekday Calculator
+    zh_Hans: 星期几计算器
+    bn_BD: সপ্তাহের দিন ক্যালকুলেটর
+description:
+  human:
+    en_US: A tool for calculating the weekday of a given date.
+    zh_Hans: 计算指定日期为星期几的工具。
+    bn_BD: একটি নির্দিষ্ট তারিখের জন্য সপ্তাহের দিন গণনা করার সরঞ্জাম।
+  llm: A tool for calculating the weekday of a given date by year, month and day.
+parameters:
+  - name: year
+    type: number
+    required: true
+    form: llm
+    label:
+      en_US: Year
+      zh_Hans: 年
+      bn_BD: বছর
+    human_description:
+      en_US: Year
+      zh_Hans: 年
+      bn_BD: বছর
+  - name: month
+    type: number
+    required: true
+    form: llm
+    label:
+      en_US: Month
+      zh_Hans: 月
+      bn_BD: মাস
+    human_description:
+      en_US: Month
+      zh_Hans: 月
+      bn_BD: মাস
+  - name: day
+    type: number
+    required: true
+    form: llm
+    label:
+      en_US: day
+      zh_Hans: 日
+      bn_BD: দিন
+    human_description:
+      en_US: day
+      zh_Hans: 日
+      bn_BD: দিন

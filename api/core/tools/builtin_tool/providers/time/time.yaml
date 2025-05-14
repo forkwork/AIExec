@@ -1,0 +1,16 @@
+identity:
+  author: Aiexec
+  name: time
+  label:
+    en_US: CurrentTime
+    zh_Hans: 时间
+    bn_BD: সময়
+    pt_BR: CurrentTime
+  description:
+    en_US: A tool for getting the current time.
+    zh_Hans: 一个用于获取当前时间的工具。
+    bn_BD: বর্তমান সময় পেতে একটি টুল।
+    pt_BR: A tool for getting the current time.
+  icon: icon.svg
+  tags:
+    - utilities
