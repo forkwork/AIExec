@@ -44,7 +44,8 @@ jobs:
     needs: matrix_prepare
     runs-on: ${{ matrix.platform == 'linux/arm64' && 'arm64_runner' || 'ubuntu-latest' }}
     defaults:
-      directory: plugins/aiexecy-plugin
+      run:
+        working-directory: plugins/aiexecy-plugin
     if: github.repository == 'khulnasoft/aiexec'
     strategy:
       matrix: ${{ fromJson(needs.matrix_prepare.outputs.matrix) }}
@@ -98,7 +99,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     defaults:
-      directory: plugins/aiexecy-plugin
+      run:
+        working-directory: plugins/aiexecy-plugin
     strategy:
       matrix:
         scope: [serverless, local]
