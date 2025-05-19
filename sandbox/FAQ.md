@@ -6,7 +6,7 @@ This occurs because the `sandbox` implementation generates a temporary file in t
 
 - Root: `/var/sandbox/sandbox-python/` is the root directory from the Python process perspective. Its subdirectories depend on the `python_lib_path` configuration in your `config.yaml`. Usually, it includes:
   - `etc/` directory
-  - `python.so` shared object, compiled and built by `sandbox`
+  - `python.go` shared object, compiled and built by `sandbox`
   - `usr/lib` directory
   - `usr/local/`
 
@@ -58,8 +58,8 @@ To quickly identify the system calls your Python code depends on, here is the re
 
 2. Run `go run cmd/test/syscall_dig/main.go`, the output will like this:
 ```shell
-~/sandbox$ # make sure you already build this project, there should be a file `internal/core/runner/python/python.so`
-~/sandbox$ mkdir -p /var/sandbox/sandbox-python && cp internal/core/runner/python/python.so /var/sandbox/sandbox-python/
+~/sandbox$ # make sure you already build this project, there should be a file `internal/core/runner/python/python.go`
+~/sandbox$ mkdir -p /var/sandbox/sandbox-python && cp internal/core/runner/python/python.go /var/sandbox/sandbox-python/
 ~/sandbox$ go run cmd/test/syscall_dig/main.go
 failed with signal: bad system call
 ...

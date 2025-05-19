@@ -1,7 +1,7 @@
 import ctypes
 import os
 
-lib = ctypes.CDLL("/var/sandbox/sandbox-python/python.so")
+lib = ctypes.CDLL("/var/sandbox/sandbox-python/python.go")
 lib.AiexecSeccomp.argtypes = [ctypes.c_uint32, ctypes.c_uint32, ctypes.c_bool]
 lib.AiexecSeccomp.restype = None
 

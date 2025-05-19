@@ -17,12 +17,12 @@ import (
 	"aiexec-sandbox/internal/utils/log"
 )
 
-//go:embed python.so
+//go:embed python.go
 var python_lib []byte
 
 const (
 	LIB_PATH = "/var/sandbox/sandbox-python"
-	LIB_NAME = "python.so"
+	LIB_NAME = "python.go"
 )
 
 func init() {

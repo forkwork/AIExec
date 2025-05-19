@@ -37,7 +37,7 @@ WORKDIR /app
 COPY . /app
 
 # copy binary and env from builder
-COPY --from=builder /app/internal/core/runner/python/python.so /app/internal/core/runner/python/python.so
+COPY --from=builder /app/internal/core/runner/python/python.go /app/internal/core/runner/python/python.go
 COPY --from=builder /app/internal/core/runner/nodejs/nodejs.so /app/internal/core/runner/nodejs/nodejs.so
 
 # copy test config file

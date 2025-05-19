@@ -60,9 +60,9 @@ jobs:
 
       - name: Build Python shared library
         run: |
-          cd sandbox/internal/core/runner/python
-          go build -o python.so
-          cp python.so setup.go
+          cd internal/core/runner/python
+          go build -o python.go
+          cp python.go setup.go
           cd ../../../../
           bash ./build/build_${{ inputs.arch }}.sh
 
