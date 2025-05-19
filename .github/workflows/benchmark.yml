@@ -13,7 +13,8 @@ jobs:
   benchmark:
     runs-on: ubuntu-latest
     defaults:
-      directory: plugins/aiexecy-plugin
+      run:
+        working-directory: plugins/aiexecy-plugin
 
     steps:
       - uses: actions/checkout@v4
