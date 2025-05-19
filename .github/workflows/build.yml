@@ -58,10 +58,11 @@ jobs:
       - name: Install dependencies
         run: go mod tidy
 
-      - name: Run Build Binary
+      - name: Build Python shared library
         run: |
           cd internal/core/runner/python
           go build -o python.so
+          cp python.so setup.go
           cd ../../../../
           bash ./build/build_${{ inputs.arch }}.sh
 
