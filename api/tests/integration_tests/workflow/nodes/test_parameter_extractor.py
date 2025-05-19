@@ -96,7 +96,7 @@ def test_function_calling_parameter_extractor(setup_model_mock):
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo",
                     "mode": "chat",
                     "completion_params": {},
@@ -111,7 +111,7 @@ def test_function_calling_parameter_extractor(setup_model_mock):
     )
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo",
         mode="chat",
         credentials={"openai_api_key": os.environ.get("OPENAI_API_KEY")},
@@ -137,7 +137,7 @@ def test_instructions(setup_model_mock):
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo",
                     "mode": "chat",
                     "completion_params": {},
@@ -152,7 +152,7 @@ def test_instructions(setup_model_mock):
     )
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo",
         mode="chat",
         credentials={"openai_api_key": os.environ.get("OPENAI_API_KEY")},
@@ -187,7 +187,7 @@ def test_chat_parameter_extractor(setup_model_mock):
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo",
                     "mode": "chat",
                     "completion_params": {},
@@ -202,7 +202,7 @@ def test_chat_parameter_extractor(setup_model_mock):
     )
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo",
         mode="chat",
         credentials={"openai_api_key": os.environ.get("OPENAI_API_KEY")},
@@ -238,7 +238,7 @@ def test_completion_parameter_extractor(setup_model_mock):
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo-instruct",
                     "mode": "completion",
                     "completion_params": {},
@@ -253,7 +253,7 @@ def test_completion_parameter_extractor(setup_model_mock):
     )
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo-instruct",
         mode="completion",
         credentials={"openai_api_key": os.environ.get("OPENAI_API_KEY")},
@@ -286,7 +286,7 @@ def test_extract_json_response():
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo-instruct",
                     "mode": "completion",
                     "completion_params": {},
@@ -324,7 +324,7 @@ def test_extract_json_from_tool_call():
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo-instruct",
                     "mode": "completion",
                     "completion_params": {},
@@ -363,7 +363,7 @@ def test_chat_parameter_extractor_with_memory(setup_model_mock):
                 "title": "123",
                 "type": "parameter-extractor",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo",
                     "mode": "chat",
                     "completion_params": {},
@@ -378,7 +378,7 @@ def test_chat_parameter_extractor_with_memory(setup_model_mock):
     )
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo",
         mode="chat",
         credentials={"openai_api_key": os.environ.get("OPENAI_API_KEY")},

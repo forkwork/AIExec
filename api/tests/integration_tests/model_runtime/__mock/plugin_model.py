@@ -34,8 +34,8 @@ class MockModelClass(PluginModelClient):
                 updated_at=datetime.datetime.now(),
                 provider="openai",
                 tenant_id=tenant_id,
-                plugin_unique_identifier="langgenius/openai/openai",
-                plugin_id="langgenius/openai",
+                plugin_unique_identifier="khulnasoft/openai/openai",
+                plugin_id="khulnasoft/openai",
                 declaration=ProviderEntity(
                     provider="openai",
                     label=I18nObject(

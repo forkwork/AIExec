@@ -84,7 +84,7 @@ def test_execute_llm(setup_model_mock):
                 "title": "123",
                 "type": "llm",
                 "model": {
-                    "provider": "langgenius/openai/openai",
+                    "provider": "khulnasoft/openai/openai",
                     "name": "gpt-3.5-turbo",
                     "mode": "chat",
                     "completion_params": {},
@@ -106,7 +106,7 @@ def test_execute_llm(setup_model_mock):
     db.session.close = MagicMock()
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo",
         mode="chat",
         credentials=credentials,
@@ -170,7 +170,7 @@ def test_execute_llm_with_jinja2(setup_code_executor_mock, setup_model_mock):
     db.session.close = MagicMock()
 
     node._fetch_model_config = get_mocked_fetch_model_config(
-        provider="langgenius/openai/openai",
+        provider="khulnasoft/openai/openai",
         model="gpt-3.5-turbo",
         mode="chat",
         credentials=credentials,

@@ -79,7 +79,7 @@ limit 1000"""
                     )
 
                     try:
-                        # update provider name append with "langgenius/{provider_name}/{provider_name}"
+                        # update provider name append with "khulnasoft/{provider_name}/{provider_name}"
                         params = {"record_id": record_id}
                         update_retrieval_model_sql = ""
                         if retrieval_model and retrieval_model_changed:

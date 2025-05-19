@@ -100,7 +100,7 @@ class ProviderManager:
             tenant_id, provider_name_to_provider_records_dict
         )
 
-        # append providers with langgenius/openai/openai
+        # append providers with khulnasoft/openai/openai
         provider_name_list = list(provider_name_to_provider_records_dict.keys())
         for provider_name in provider_name_list:
             provider_id = ModelProviderID(provider_name)
@@ -159,7 +159,7 @@ class ProviderManager:
             provider_records = provider_name_to_provider_records_dict.get(provider_entity.provider, [])
             provider_model_records = provider_name_to_provider_model_records_dict.get(provider_entity.provider, [])
             provider_id_entity = ModelProviderID(provider_name)
-            if provider_id_entity.is_langgenius():
+            if provider_id_entity.is_khulnasoft():
                 provider_model_records.extend(
                     provider_name_to_provider_model_records_dict.get(provider_id_entity.provider_name, [])
                 )
@@ -206,7 +206,7 @@ class ProviderManager:
 
             provider_id_entity = ModelProviderID(provider_name)
 
-            if provider_id_entity.is_langgenius():
+            if provider_id_entity.is_khulnasoft():
                 if provider_model_settings is not None:
                     provider_model_settings.extend(
                         provider_name_to_provider_model_settings_dict.get(provider_id_entity.provider_name, [])

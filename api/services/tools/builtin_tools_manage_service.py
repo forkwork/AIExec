@@ -292,7 +292,7 @@ class BuiltinToolManageService:
             full_provider_name = provider_name
             provider_id_entity = GenericProviderID(provider_name)
             provider_name = provider_id_entity.provider_name
-            if provider_id_entity.organization != "langgenius":
+            if provider_id_entity.organization != "khulnasoft":
                 provider_obj = (
                     db.session.query(BuiltinToolProvider)
                     .filter(

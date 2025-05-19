@@ -613,7 +613,7 @@ class AppDslService:
         """
         Extract dependencies from workflow
         :param workflow: Workflow instance
-        :return: dependencies list format like ["langgenius/google"]
+        :return: dependencies list format like ["khulnasoft/google"]
         """
         graph = workflow.graph_dict
         dependencies = cls._extract_dependencies_from_workflow_graph(graph)
@@ -624,7 +624,7 @@ class AppDslService:
         """
         Extract dependencies from workflow graph
         :param graph: Workflow graph
-        :return: dependencies list format like ["langgenius/google"]
+        :return: dependencies list format like ["khulnasoft/google"]
         """
         dependencies = []
         for node in graph.get("nodes", []):
@@ -703,7 +703,7 @@ class AppDslService:
         """
         Extract dependencies from model config
         :param model_config: model config dict
-        :return: dependencies list format like ["langgenius/google"]
+        :return: dependencies list format like ["khulnasoft/google"]
         """
         dependencies = []
 

@@ -1,1 +1,1 @@
-DEFAULT_PLUGIN_ID = "langgenius"
+DEFAULT_PLUGIN_ID = "khulnasoft"

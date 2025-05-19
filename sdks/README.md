@@ -2,24 +2,24 @@
 
 ## Java
 
-https://github.com/langgenius/java-client/
+https://github.com/khulnasoft/aiexec/sdks/java-client
 
 ## Go
 
-https://github.com/khulnasoft/aiexec-sdk-go
+https://github.com/khulnasoft/aiexec/sdks/go-client
 
 ## Ruby
 
-https://github.com/langgenius/ruby-sdk
+https://github.com/khulnasoft/aiexec/sdks/ruby-client
 
 ## Python
 
-TODO move to another place
+https://github.com/khulnasoft/aiexec/sdks/python-client
 
 ## PHP
 
-TODO move to another place
+https://github.com/khulnasoft/aiexec/sdks/php-client
 
 ## Node.js
 
-TODO move to another place
+https://github.com/khulnasoft/aiexec/sdks/nodejs-client

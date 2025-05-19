@@ -186,7 +186,7 @@ class ProviderConfiguration(BaseModel):
         # get provider
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         provider_record = (
@@ -346,7 +346,7 @@ class ProviderConfiguration(BaseModel):
         # get provider model
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         provider_model_record = (
@@ -476,7 +476,7 @@ class ProviderConfiguration(BaseModel):
         """
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         return (
@@ -555,7 +555,7 @@ class ProviderConfiguration(BaseModel):
         """
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         return (
@@ -578,7 +578,7 @@ class ProviderConfiguration(BaseModel):
         """
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         load_balancing_config_count = (
@@ -622,7 +622,7 @@ class ProviderConfiguration(BaseModel):
         """
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         model_setting = (
@@ -688,7 +688,7 @@ class ProviderConfiguration(BaseModel):
         # get preferred provider
         model_provider_id = ModelProviderID(self.provider.provider)
         provider_names = [self.provider.provider]
-        if model_provider_id.is_langgenius():
+        if model_provider_id.is_khulnasoft():
             provider_names.append(model_provider_id.provider_name)
 
         preferred_model_provider = (
