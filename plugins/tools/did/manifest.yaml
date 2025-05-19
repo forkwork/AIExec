@@ -1,0 +1,34 @@
+author: khulnasoft
+created_at: "2024-09-20T08:03:44.658609186Z"
+description:
+  en_US:
+    D-ID is a tool enabling the creation of high-quality, custom videos of Digital
+    Humans from a single image.
+icon: icon.svg
+label:
+  en_US: D-ID
+meta:
+  arch:
+    - amd64
+    - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: "3.12"
+  version: 0.0.1
+name: did
+plugins:
+  tools:
+    - provider/did.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags:
+  - videos
+type: plugin
+version: 0.0.2

@@ -1,0 +1,36 @@
+author: khulnasoft
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  en_US: 'Trello: A visual tool for organizing your work and life.'
+  pt_BR: 'Trello: Uma ferramenta visual para organizar seu trabalho e vida.'
+  zh_Hans: 'Trello: 一个用于组织工作和生活的视觉工具。'
+icon: icon.svg
+label:
+  en_US: Trello
+  pt_BR: Trello
+  zh_Hans: Trello
+meta:
+  arch:
+  - amd64
+  - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: trello
+plugins:
+  tools:
+  - provider/trello.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags:
+- productivity
+type: plugin
+version: 0.0.2

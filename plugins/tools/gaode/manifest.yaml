@@ -1,0 +1,39 @@
+author: "khulnasoft"
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  en_US: Autonavi Open Platform service toolkit.
+  pt_BR: Kit de ferramentas de serviço Autonavi Open Platform.
+  zh_Hans: 高德开放平台服务工具包。
+icon: icon.svg
+label:
+  en_US: Autonavi
+  pt_BR: Autonavi
+  zh_Hans: 高德
+meta:
+  arch:
+  - amd64
+  - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: gaode
+plugins:
+  tools:
+  - provider/gaode.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags:
+- utilities
+- productivity
+- travel
+- weather
+type: plugin
+version: 0.0.2

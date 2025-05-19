@@ -1,13 +1,13 @@
 [project]
 name = "aiexec_plugin"
 version = "0.3.0"
-description = "Aiexec Plugin SDK"
+description = "Aiexec Plugin SDK for building plugins and tools"
 authors = [{ name = "khulnasoft", email = "hello@aiexec.ai" }]
 dependencies = [
     "Flask~=3.0.3",
     "Werkzeug~=3.0.3",
     "dpkt~=1.9.8",
-    "gevent~=24.11.1",
+    "gevent~=23.9.1",
     "httpx~=0.28.1",
     "pydantic_settings>=2.5.0,<3.0.0",
     "pydantic>=2.8.2",
@@ -18,21 +18,54 @@ dependencies = [
     "tiktoken~=0.8.0",
     "yarl>=1.9.4,<2.0",
     "packaging>=25.0",
+    "zope.event>=5.0",
+    "zope.interface>=6.0",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
 license = { text = "Apache2.0" }
-keywords = ["aiexec", "plugin", "sdk"]
+keywords = ["aiexec", "plugin", "sdk", "ai", "llm", "tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [project.urls]
 Homepage = "https://github.com/khulnasoft/aiexec"
+Documentation = "https://github.com/khulnasoft/aiexec/tree/main/sdks/plugin-sdks/python"
+Repository = "https://github.com/khulnasoft/aiexec.git"
+Issues = "https://github.com/khulnasoft/aiexec/issues"
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+package-type = "library"
+python = ">=3.11"
 
-[dependency-groups]
+[tool.pdm.dev-dependencies]
 lint = ["ruff>=0.11.2"]
 test = ["pytest>=8.3.5"]
+docs = ["mkdocs-material>=9.5.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "B", "I", "N", "UP", "PL", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.isort]
+known-first-party = ["aiexec_plugin"]
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=aiexec_plugin"

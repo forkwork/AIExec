@@ -1,0 +1,33 @@
+author: khulnasoft
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  en_US: OneBot v11 protocol tool, provides a set of actions for OneBot v11 protocol
+  zh_Hans: OneBot v11 协议工具，提供 OneBot v11 协议的一组动作 API
+icon: icon.ico
+label:
+  en_US: OneBot v11 Protocol Tool
+  zh_Hans: OneBot v11 协议工具
+meta:
+  arch:
+    - amd64
+    - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: onebot
+plugins:
+  tools:
+    - provider/onebot.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags: []
+type: plugin
+version: 0.0.2

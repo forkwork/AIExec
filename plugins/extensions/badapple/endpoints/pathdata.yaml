@@ -1,0 +1,5 @@
+path: "/pathdata.json"
+method: "GET"
+extra:
+  python:
+    source: "endpoints/pathdata.py"

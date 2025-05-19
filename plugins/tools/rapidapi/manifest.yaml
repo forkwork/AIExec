@@ -1,0 +1,35 @@
+author: khulnasoft
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  en_US: RapidAPI is the world's largest API marketplace with over 1,000,000 developers
+    and 10,000 APIs.
+  zh_Hans: RapidAPI是全球最大的API市场，拥有超过100万开发人员和10000个API。
+icon: rapidapi.png
+label:
+  en_US: RapidAPI
+  zh_Hans: RapidAPI
+meta:
+  arch:
+  - amd64
+  - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: rapidapi
+plugins:
+  tools:
+  - provider/rapidapi.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags:
+- news
+type: plugin
+version: 0.0.3

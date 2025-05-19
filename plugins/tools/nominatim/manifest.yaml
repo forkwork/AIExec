@@ -1,0 +1,39 @@
+author: khulnasoft
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  de_DE: Nominatim ist eine Suchmaschine für OpenStreetMap-Daten
+  en_US: Nominatim is a search engine for OpenStreetMap data
+  ja_JP: NominatimはOpenStreetMapデータの検索エンジンです
+  zh_Hans: Nominatim是OpenStreetMap数据的搜索引擎
+icon: icon.svg
+label:
+  de_DE: Nominatim
+  en_US: Nominatim
+  ja_JP: Nominatim
+  zh_Hans: Nominatim
+meta:
+  arch:
+  - amd64
+  - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: nominatim
+plugins:
+  tools:
+  - provider/nominatim.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags:
+- search
+- utilities
+type: plugin
+version: 0.0.3

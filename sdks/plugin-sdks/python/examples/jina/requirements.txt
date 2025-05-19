@@ -1,0 +1,2 @@
+aiexec_plugin~=0.0.1b31
+transformers~=4.42.4

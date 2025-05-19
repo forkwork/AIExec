@@ -1,0 +1,33 @@
+author: khulnasoft
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  en_US: Generate podcast audio using Text-to-Speech services
+  zh_Hans: 使用文字转语音服务生成播客音频
+icon: icon.svg
+label:
+  en_US: Podcast Generator
+  zh_Hans: 播客生成器
+meta:
+  arch:
+  - amd64
+  - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: podcast_generator
+plugins:
+  tools:
+  - provider/podcast_generator.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags: []
+type: plugin
+version: 0.0.3

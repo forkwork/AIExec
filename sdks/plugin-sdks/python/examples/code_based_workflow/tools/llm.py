@@ -1,0 +1,29 @@
+from collections.abc import Generator
+from typing import Any
+
+from aiexec_plugin import Tool
+from aiexec_plugin.entities.model.llm import LLMModelConfig
+from aiexec_plugin.entities.model.message import SystemPromptMessage, UserPromptMessage
+from aiexec_plugin.entities.tool import ToolInvokeMessage
+
+
+class LLMTool(Tool):
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+        response = self.session.model.llm.invoke(
+            model_config=LLMModelConfig(
+                provider="openai",
+                model="gpt-4o-mini",
+                mode="chat",
+                completion_params={},
+            ),
+            prompt_messages=[
+                SystemPromptMessage(content="you are a helpful assistant"),
+                UserPromptMessage(content=tool_parameters.get("query")),
+            ],
+            stream=True,
+        )
+
+        for chunk in response:
+            if chunk.delta.message:
+                assert isinstance(chunk.delta.message.content, str)
+                yield self.create_text_message(text=chunk.delta.message.content)

@@ -1,0 +1,40 @@
+author: khulnasoft
+created_at: '2024-09-20T08:03:44.658609186Z'
+description:
+  en_US: AlphaVantage is an online platform that provides financial market data and
+    APIs, making it convenient for individual investors and developers to access stock
+    quotes, technical indicators, and stock analysis.
+  pt_BR: AlphaVantage is an online platform that provides financial market data and
+    APIs, making it convenient for individual investors and developers to access stock
+    quotes, technical indicators, and stock analysis.
+  zh_Hans: AlphaVantage是一个在线平台，它提供金融市场数据和API，便于个人投资者和开发者获取股票报价、技术指标和股票分析。
+icon: icon.svg
+label:
+  en_US: AlphaVantage
+  pt_BR: AlphaVantage
+  zh_Hans: AlphaVantage
+meta:
+  arch:
+  - amd64
+  - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: '3.12'
+  version: 0.0.1
+name: alphavantage
+plugins:
+  tools:
+  - provider/alphavantage.yaml
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+tags:
+- finance
+type: plugin
+version: 0.0.2

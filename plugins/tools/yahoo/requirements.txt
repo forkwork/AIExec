@@ -1,0 +1,2 @@
+aiexec_plugin>=0.1.0,<0.2.0
+yfinance==0.2.55

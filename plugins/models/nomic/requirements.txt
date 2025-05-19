@@ -1,0 +1,2 @@
+aiexec_plugin==0.0.1b65
+nomic~=3.1.2
