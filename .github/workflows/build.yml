@@ -58,16 +58,12 @@ jobs:
       - name: Install dependencies
         run: go mod tidy
 
-      - name: Build Python shared library
+      - name: Run Build Binary
         run: |
           cd internal/core/runner/python
-          python3 -c "import ctypes; ctypes.cdll.LoadLibrary('python.so')" || {
-            echo "Building Python shared library..."
-            python3 setup.py build
-          }
-
-      - name: Run Build Binary
-        run: bash ./build/build_${{ inputs.arch }}.sh
+          go build -o python.so
+          cd ../../../../
+          bash ./build/build_${{ inputs.arch }}.sh
 
       - name: Run Build Docker Image
         run: docker build -t aiexec-sandbox -f ./docker/${{ inputs.arch }}/dockerfile .
