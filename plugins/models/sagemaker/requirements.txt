@@ -1,2 +1,2 @@
 aiexec_plugin~=0.0.1b73
-sagemaker~=2.231.0
+sagemaker~=2.244.1
