@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/static/python_syscall"
+	"aiexec-sandbox/internal/static/python_syscall"
 )
 
 const (

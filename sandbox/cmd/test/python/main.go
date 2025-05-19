@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/python"
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/service"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
+	"aiexec-sandbox/internal/core/runner/python"
+	"aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/service"
+	"aiexec-sandbox/internal/static"
 )
 
 func main() {

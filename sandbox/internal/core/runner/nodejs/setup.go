@@ -6,7 +6,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 const (

@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
+	"aiexec-sandbox/internal/static"
 )
 
 func Auth() gin.HandlerFunc {

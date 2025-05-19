@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 type OutputCaptureRunner struct {

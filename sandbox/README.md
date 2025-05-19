@@ -11,7 +11,7 @@ AiexecSandbox currently only supports Linux, as it's designed for docker contain
 - golang 1.20.6
 
 ### Steps
-1. Clone the repository using `git clone https://github.com/khulnasoft/aiexec/sandbox` and navigate to the project directory.
+1. Clone the repository using `git clone https://aiexec-sandbox` and navigate to the project directory.
 2. Run ./install.sh to install the necessary dependencies.
 3. Run ./build/build_[amd64|arm64].sh to build the sandbox binary.
 4. Run ./main to start the server.

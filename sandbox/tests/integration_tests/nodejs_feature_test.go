@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/service"
+	"aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/service"
 )
 
 func TestNodejsBasicTemplate(t *testing.T) {

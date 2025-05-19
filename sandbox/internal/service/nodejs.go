@@ -3,10 +3,10 @@ package service
 import (
 	"time"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/nodejs"
-	runner_types "github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
-	"github.com/khulnasoft/aiexec/sandbox/internal/types"
+	"aiexec-sandbox/internal/core/runner/nodejs"
+	runner_types "aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/static"
+	"aiexec-sandbox/internal/types"
 )
 
 func RunNodeJsCode(code string, preload string, options *runner_types.RunnerOptions) *types.AiexecSandboxResponse {

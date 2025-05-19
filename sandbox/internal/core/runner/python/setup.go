@@ -9,12 +9,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
+	"aiexec-sandbox/internal/static"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner"
-	python_dependencies "github.com/khulnasoft/aiexec/sandbox/internal/core/runner/python/dependencies"
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/core/runner"
+	python_dependencies "aiexec-sandbox/internal/core/runner/python/dependencies"
+	"aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 //go:embed python.so

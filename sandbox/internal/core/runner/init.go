@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/static"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 func init() {

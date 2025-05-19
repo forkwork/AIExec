@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/types"
+	"aiexec-sandbox/internal/utils/log"
 	"gopkg.in/yaml.v3"
 )
 

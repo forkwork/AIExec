@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/khulnasoft/aiexec/sandbox/internal/controller"
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/python"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/controller"
+	"aiexec-sandbox/internal/core/runner/python"
+	"aiexec-sandbox/internal/static"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 func initConfig() {

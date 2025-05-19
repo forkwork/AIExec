@@ -2,9 +2,9 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	runner_types "github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/service"
-	"github.com/khulnasoft/aiexec/sandbox/internal/types"
+	runner_types "aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/service"
+	"aiexec-sandbox/internal/types"
 )
 
 func RunSandboxController(c *gin.Context) {

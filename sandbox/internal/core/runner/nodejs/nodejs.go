@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner"
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
+	"aiexec-sandbox/internal/core/runner"
+	"aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/static"
 )
 
 type NodeJsRunner struct {

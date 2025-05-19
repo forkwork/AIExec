@@ -3,7 +3,7 @@ package main
 import (
 	"os/exec"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/lib/python"
+	"aiexec-sandbox/internal/core/lib/python"
 )
 
 func main() {

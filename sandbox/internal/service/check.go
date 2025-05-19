@@ -3,8 +3,8 @@ package service
 import (
 	"errors"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
+	"aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/static"
 )
 
 var (

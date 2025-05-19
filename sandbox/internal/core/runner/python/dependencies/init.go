@@ -3,7 +3,7 @@ package dependencies
 import (
 	"sync"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/core/runner/types"
 )
 
 var preload_script_map = map[string]string{}

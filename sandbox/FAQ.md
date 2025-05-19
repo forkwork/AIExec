@@ -10,7 +10,7 @@ This occurs because the `sandbox` implementation generates a temporary file in t
   - `usr/lib` directory
   - `usr/local/`
 
-If you haven't configured `python_lib_path`, `sandbox` will default to the following settings (see code [internal/static/config_default_amd64.go](https://github.com/khulnasoft/aiexec/sandbox/blob/main/internal/static/config_default_amd64.go); for ARM systems, see `config_default_arm64.go`):
+If you haven't configured `python_lib_path`, `sandbox` will default to the following settings (see code [internal/static/config_default_amd64.go](https://aiexec-sandbox/blob/main/internal/static/config_default_amd64.go); for ARM systems, see `config_default_arm64.go`):
 
 ```go
 var DEFAULT_PYTHON_LIB_REQUIREMENTS = []string{
@@ -50,7 +50,7 @@ python_lib_path:
 
 ### 2. My Python code returns an "operation not permitted" error?
 
-`sandbox` uses Linux seccomp to restrict system calls. It’s recommended to read the source code ([internal/core/lib/python/add_seccomp.go](https://github.com/khulnasoft/aiexec/sandbox/blob/main/internal/core/lib/python/add_seccomp.go)). When you encounter this error, it usually means your code executed a restricted system call. The default allowed system calls are configured in [syscalls_amd64](https://github.com/khulnasoft/aiexec/sandbox/blob/main/internal/static/python_syscall/syscalls_amd64.go). You can modify this according to your system’s needs (currently, it cannot be modified through the configuration file).
+`sandbox` uses Linux seccomp to restrict system calls. It’s recommended to read the source code ([internal/core/lib/python/add_seccomp.go](https://aiexec-sandbox/blob/main/internal/core/lib/python/add_seccomp.go)). When you encounter this error, it usually means your code executed a restricted system call. The default allowed system calls are configured in [syscalls_amd64](https://aiexec-sandbox/blob/main/internal/static/python_syscall/syscalls_amd64.go). You can modify this according to your system’s needs (currently, it cannot be modified through the configuration file).
 
 To quickly identify the system calls your Python code depends on, here is the recommended method:
 

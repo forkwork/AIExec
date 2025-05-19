@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"github.com/gin-gonic/gin"
-	"github.com/khulnasoft/aiexec/sandbox/internal/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/types"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 func MaxWorker(max int) gin.HandlerFunc {

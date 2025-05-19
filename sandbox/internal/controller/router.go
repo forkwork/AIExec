@@ -2,8 +2,8 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/khulnasoft/aiexec/sandbox/internal/middleware"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
+	"aiexec-sandbox/internal/middleware"
+	"aiexec-sandbox/internal/static"
 	"net/http"
 )
 

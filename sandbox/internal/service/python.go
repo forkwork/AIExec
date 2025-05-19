@@ -3,10 +3,10 @@ package service
 import (
 	"time"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/python"
-	runner_types "github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
-	"github.com/khulnasoft/aiexec/sandbox/internal/types"
+	"aiexec-sandbox/internal/core/runner/python"
+	runner_types "aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/static"
+	"aiexec-sandbox/internal/types"
 )
 
 type RunCodeResponse struct {

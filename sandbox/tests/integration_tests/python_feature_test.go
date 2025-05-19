@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner/types"
-	"github.com/khulnasoft/aiexec/sandbox/internal/service"
+	"aiexec-sandbox/internal/core/runner/types"
+	"aiexec-sandbox/internal/service"
 )
 
 func TestPythonBase64(t *testing.T) {

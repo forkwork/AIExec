@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/khulnasoft/aiexec/sandbox/internal/types"
+	"aiexec-sandbox/internal/types"
 )
 
 func BindRequest[T any](r *gin.Context, success func(T)) {

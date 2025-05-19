@@ -6,9 +6,9 @@ import (
 	"os/exec"
 	"path"
 
-	"github.com/khulnasoft/aiexec/sandbox/internal/core/runner"
-	"github.com/khulnasoft/aiexec/sandbox/internal/static"
-	"github.com/khulnasoft/aiexec/sandbox/internal/utils/log"
+	"aiexec-sandbox/internal/core/runner"
+	"aiexec-sandbox/internal/static"
+	"aiexec-sandbox/internal/utils/log"
 )
 
 //go:embed env.sh
