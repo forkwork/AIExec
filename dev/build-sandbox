@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -x
+
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+cd "$SCRIPT_DIR/.."
+
+# Build sandbox binary
+cd sandbox
+./build/build_amd64.sh
+
+# Build Docker image
+docker build -t khulnasoft/aiexec-sandbox:latest -f docker/amd64/dockerfile . 
