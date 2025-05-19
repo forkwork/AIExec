@@ -58,6 +58,14 @@ jobs:
       - name: Install dependencies
         run: go mod tidy
 
+      - name: Build Python shared library
+        run: |
+          cd internal/core/runner/python
+          python3 -c "import ctypes; ctypes.cdll.LoadLibrary('python.so')" || {
+            echo "Building Python shared library..."
+            python3 setup.py build
+          }
+
       - name: Run Build Binary
         run: bash ./build/build_${{ inputs.arch }}.sh
 
